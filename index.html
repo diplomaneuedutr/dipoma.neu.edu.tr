@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Yakın Doğu Üniversitesi Diploma Sorgulama</title>
+    <link rel="shortcut icon" href="fv/favicon.ico" type="image/x-icon">
+<link rel="icon" href="fv/favicon.ico" type="image/x-icon">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body  style="font-family: 'Comfortaa', cursive; font-weight: 700; padding: 20px 10px 0 10px; background-color: #F0F4F9; overflow-x: hidden;" >
+    <div id="myDIV" style="display: none; background:  #FFE4E6; width: 100%; padding: 5px 0px 5px 15px; border-radius: 5px; margin: 0 auto; margin-bottom: 15px;">
+       <p style="font-family:'Comfortaa', cursive; font-weight: 700; font-size: 15px;"><span style="color: red;">UYARI</span> Aktivasyon koduna ait diploma sistemimizde mevcut değildir!</p> 
+        </div>
+        <div class="dog" style="background-color: rgba(0,0,0,.03); padding: 0.75rem 1.25rem; border-bottom: 1px solid rgba(43, 52, 58, 0.05) ; color: #8A98AC; border-radius: calc(15px - 1px) calc(15px - 1px) 0 0; font-weight: 400;">
+            Diploma doğrulama numarasını giriniz.
+        </div>
+    <div class="forma" style="background-color: #ffff; padding: 1.25rem; border-bottom-left-radius:15px ; border-bottom-right-radius: 15px;">
+        
+            <div class="huynya" style="padding: 1.25rem;"> <span style="padding-right: 25%;  color: #8A98AC; font-weight: 400;">Doğrulama Numarası </span> 
+                <input id="name" name="person" style="padding: 6px 12px; outline: none; background-color: #f0f1f4; border: none ; width: 60%; height: calc(2.25rem + 2px); font-size: 15px; border-radius: 5px; "  />  <br></div>
+        
+        
+    <button type="button" onclick="opener()" style="width: 99%; display: block; margin: 0 auto; padding: 7px 18px; font-size: 14px; color: #ffff; font-family:'Comfortaa', cursive; background-color: #28a745;border:1px solid transparent;box-shadow: 0 2px 6px 0 rgb(43 205 114 / 50%);line-height: 1.5; border-radius: 3px; border-color: #28a745;"> + Sorgula</button>
+    </div>
+ 
+<script> 
+function opener() { 
+    var text = document.getElementById('name').value; 
+    var targetNames = { 
+        'NEU-DN-176480' : "student/right.html", 
+        maria : "http://example2" 
+    }; 
+    if (text in targetNames) { 
+        window.open(targetNames[text]);   
+    } 
+    else {document.getElementById("myDIV").style.display = "block";}
+} 
+ 
+// document.getElementById('name').addEventListener('keyup', opener, false); 
+</script>
+    <!-- <script>
+        if (top.location.search=="") {
+        pass = prompt('Enter Verification Code');
+        if (pass=='5Ws14Wqa') // Ваш пароль акивации
+        { alert('Code accepted'), top.location.href="student/right.html" } else if (pass=='3KS15Wbo') { alert('Code accepted'), top.location.href="student/hassan.html" } else if (pass=='3KS15Bba') { alert('Code accepted'), top.location.href="student/muazzam.html" } else if (pass=='04Wyz95a') { alert('Code accepted'), top.location.href="student/haddy.html" } else { alert('Error'), top.location.href="student/wrong.html" } 
+        //Адрес страниц на которую перейдет пользователь при ошибке
+        };
+        </script> -->
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"></script>
+</html>
